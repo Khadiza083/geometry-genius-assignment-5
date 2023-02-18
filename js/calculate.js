@@ -37,15 +37,24 @@ function areaContainer(shapeName, area, serial){
   container.appendChild(tr)
 }
 
+
+
 // calculate triangle area
 document.getElementById('triangle-area').addEventListener('click', function(){
     const firstInputField = getFirstFieldById('base')
     const secondInputField = getSecondFieldById('height')
-
-    serial+=1;
+    let area;
+    
     const shapeName = document.getElementById('triangle-name').innerText
 
-    const area = 0.5 * firstInputField * secondInputField;
+    if((firstInputField < 0 || secondInputField < 0 ) || (firstInputField ==='' || secondInputField==='' )|| isNaN(firstInputField) || isNaN(secondInputField)){
+        alert('Please, Enter correct value')
+        return;
+    }
+    else { 
+        area = 0.5 * firstInputField * secondInputField;
+    }
+    serial+=1;
     areaContainer(shapeName, area, serial);
     
    
@@ -54,11 +63,17 @@ document.getElementById('triangle-area').addEventListener('click', function(){
 document.getElementById('rectangle-area').addEventListener('click', function(){
     const firstInputField = getFirstFieldById('width-field')
     const secondInputField = getSecondFieldById('length-field')
-
-    serial+=1;
+    let area;
     const shapeName = document.getElementById('rectangle-name').innerText
 
-    const area = firstInputField * secondInputField;
+    if((firstInputField < 0 || secondInputField < 0 ) || (firstInputField ==='' || secondInputField==='' )|| isNaN(firstInputField) || isNaN(secondInputField)){
+        alert('Please, Enter correct value')
+        return;
+    }
+    else { 
+        area = 0.5 * firstInputField * secondInputField;
+    }
+    serial+=1;
     areaContainer(shapeName, area, serial);
     
    
