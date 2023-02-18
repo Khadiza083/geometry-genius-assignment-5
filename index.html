@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- header part -->
     <header class="flex justify-between px-12 py-2 bg-blue-200">
         <div>
             <h2 class="font-semibold text-3xl">Interactive</h2>
@@ -20,6 +21,132 @@
         </div>
 
     </header>
+
+    <!-- main part -->
+    <main class="px-12">
+        <section class="mt-4 flex px-12 gap-6">
+            <div class="grid grid-cols-3  gap-6 w-5/6" >
+                <!-- triangle -->
+                <div class="grid gap-4 place-items-center w-auto py-2 border-2 border-gray-100 rounded-lg">
+                    <div class="w-6/12">
+                        <img src="images/triangle.png" alt="">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Triangle</h3>
+                    <p>Area (A) =0.5 * b * h</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="b" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text" placeholder="h" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Rectangle  -->
+                <div class="grid gap-4 place-items-center border-2 border-gray-100 rounded-lg w-auto py-2">
+                    <div class="w-6/12">
+                        <img src="images/rectangle.png" alt="">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Rectangle</h3>
+                    <p>Area (A) = w * l</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="w" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text" placeholder="l" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Parallelogram -->
+                <div class="grid gap-4 place-items-center border-2 border-gray-100 rounded-lg w-auto py-2">
+                    <div class="w-6/12">
+                        <img src="images/parallelogram.png" alt="">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Parallelogram</h3>
+                    <p>Area (A) = b * h</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="b" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text" placeholder="h" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Rhombos -->
+                <div class="grid gap-4 place-items-center border-2 border-gray-100 rounded-lg w-auto py-2">
+                    <div class="w-6/12">
+                        <img src="images/rhombus.png" alt="">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Rhombos</h3>
+                    <p>Area (A) =0.5 * d1 * d2</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="d1" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text" placeholder="d2" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Pentagon -->
+                <div class="grid gap-4 place-items-center border-2 border-gray-100 rounded-lg w-auto py-2">
+                    <div class="w-6/12">
+                        <img src="images/pentagon.png" alt="">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Pentagon</h3>
+                    <p>Area (A) =0.5 * b * p</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="b" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text" placeholder="p" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Ellipse -->
+                <div class="grid gap-4 place-items-center border-2 border-gray-100 rounded-lg w-auto py-2">
+                    <div class="w-5/12">
+                        <img src="images/ellipse.png" alt="" class="object-center">
+                    </div>
+                    
+                    <h3 class="font-semibold text-xl text-gray-700">Ellipse</h3>
+                    <p>Area (A) =πab</p>
+                    <div class="flex gap-2 justify-center">
+                        <input type="text" placeholder="a" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                        <input type="text"  placeholder="b" class="w-1/5 bg-gray-200 rounded-1 pl-2">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="bg-blue-500 h-3/4 mt-3 rounded-lg w-3/4 text-center">
+                        <button class="font-semibold text-white py-2 px-6 ">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 ">
+                <div class="border-2 border-gray-100 rounded-lg h-2/5">
+                    <h3 class="font-semibold text-lg text-center underline">Area Calculation</h3>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
