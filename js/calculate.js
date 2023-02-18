@@ -55,7 +55,7 @@ document.getElementById('triangle-area').addEventListener('click', function(){
         area = 0.5 * firstInputField * secondInputField;
     }
     serial+=1;
-    areaContainer(shapeName, area, serial);
+    areaContainer(shapeName, area.toFixed(2), serial);
     
    
 })
@@ -72,9 +72,10 @@ document.getElementById('rectangle-area').addEventListener('click', function(){
     }
     else { 
         area = 0.5 * firstInputField * secondInputField;
+
     }
     serial+=1;
-    areaContainer(shapeName, area, serial);
+    areaContainer(shapeName, area.toFixed(2), serial);
     
    
 })
