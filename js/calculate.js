@@ -107,3 +107,10 @@ document.getElementById('pentagon').addEventListener('mouseover', function () {
 document.getElementById('ellipse').addEventListener('mouseover', function () {
     randomColor('ellipse')
 })
+
+
+// one html page to another page
+
+document.getElementById('blog').addEventListener('click', function(){
+    window.location.href = 'blog.html'
+})
