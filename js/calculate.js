@@ -30,7 +30,7 @@ function areaContainer(shapeName, area, serial){
 
     
     <td>
-    <button class="btn btn-sm bg-blue-500 border-0">Convert to m<sup>2</sup></button>
+    <button class="text-white px-2 rounded-lg  bg-blue-500 border-0">Convert to m<sup>2</sup></button>
     </td>
     
   `;
@@ -60,6 +60,7 @@ document.getElementById('triangle-area').addEventListener('click', function(){
    
 })
 
+// calculate rectangle area
 document.getElementById('rectangle-area').addEventListener('click', function(){
     const firstInputField = getFirstFieldById('width-field')
     const secondInputField = getSecondFieldById('length-field')
@@ -71,11 +72,38 @@ document.getElementById('rectangle-area').addEventListener('click', function(){
         return;
     }
     else { 
-        area = 0.5 * firstInputField * secondInputField;
+        area = firstInputField * secondInputField;
 
     }
     serial+=1;
     areaContainer(shapeName, area.toFixed(2), serial);
     
    
+})
+
+// random color generate
+
+function randomColor(inputId) {
+    const divitem = document.getElementById(inputId)
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    divitem.style.backgroundColor = "#" + randomColor;
+
+}
+document.getElementById('triangle').addEventListener('mouseover', function () {
+    randomColor('triangle')
+})
+document.getElementById('rectangle').addEventListener('mouseover', function () {
+    randomColor('rectangle')
+})
+document.getElementById('parallelogram').addEventListener('mouseover', function () {
+    randomColor('parallelogram')
+})
+document.getElementById('rhombos').addEventListener('mouseover', function () {
+    randomColor('rhombos')
+})
+document.getElementById('pentagon').addEventListener('mouseover', function () {
+    randomColor('pentagon')
+})
+document.getElementById('ellipse').addEventListener('mouseover', function () {
+    randomColor('ellipse')
 })
